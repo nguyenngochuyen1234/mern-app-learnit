@@ -1,0 +1,49 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username":"jim",
+    "password":"jim"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username":"jim",
+    "password":"jim"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: jdhjfd eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mzk3NTk0NzQ1MjBiZWRiZWM4MDdhNzQiLCJpYXQiOjE2NzA4NjMxNzV9.DUq7ecNvXpBhA2Kt_rQkto6Wwuwao2oUZgk-IpWqTGM
+
+{
+    "title":"My first post2",
+    "description":"google",
+    "url":"google.com",
+    "status":"LEARNING"
+}
+
+### 
+GET http://localhost:5000/api/posts
+Authorization: jdhjfd eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mzk3NTk0NzQ1MjBiZWRiZWM4MDdhNzQiLCJpYXQiOjE2NzA4NjMxNzV9.DUq7ecNvXpBhA2Kt_rQkto6Wwuwao2oUZgk-IpWqTGM
+
+###
+PUT http://localhost:5000/api/posts/63975b00e8975ccb6efbfd2e
+Content-Type: application/json
+Authorization: jdhjfd eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mzk3NTk0NzQ1MjBiZWRiZWM4MDdhNzQiLCJpYXQiOjE2NzA4NjMxNzV9.DUq7ecNvXpBhA2Kt_rQkto6Wwuwao2oUZgk-IpWqTGM
+
+{
+    "title":"My first post2",
+    "description":"google",
+    "url":"google.com",
+    "status":"LEARNING"
+}
+
+###
+DELETE http://localhost:5000/api/posts/6397595d4520bedbec807a76
+Authorization: jdhjfd eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mzk3NTk0NzQ1MjBiZWRiZWM4MDdhNzQiLCJpYXQiOjE2NzA4NjMxNzV9.DUq7ecNvXpBhA2Kt_rQkto6Wwuwao2oUZgk-IpWqTGM
